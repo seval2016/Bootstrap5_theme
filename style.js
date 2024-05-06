@@ -26,7 +26,7 @@ $(document).ready(function () {
 });
 
 
-
+/*#testimonial Section */
 $(document).ready(function () {
     $("#testimonial-carousel").owlCarousel({ // testimonial-carousel id'siyle çağırıyoruz
         loop: true,
@@ -45,15 +45,26 @@ $(document).ready(function () {
         }
     });
 
-    // Custom Navigation
-    $('.custom-nav .owl-prev').click(function () {
-        $("#testimonial-carousel").trigger('prev.owl.carousel'); // testimonial-carousel id'siyle çağırıyoruz
-    });
-    $('.custom-nav .owl-next').click(function () {
-        $("#testimonial-carousel").trigger('next.owl.carousel'); // testimonial-carousel id'siyle çağırıyoruz
-    });
-});
-
+     // Custom Navigation
+ 
+     $('.custom-nav .owl-prev, .custom-nav .owl-next').on('click', function() {
+         $(this).toggleClass('active'); // Tıklandığında aktif durum ekleyelim
+     });
+ 
+     $('.custom-nav .owl-prev, .custom-nav .owl-next').on('mouseleave', function() {
+         $(this).removeClass('active'); // Fare ayrıldığında aktif durumu kaldıralım
+     });
+ 
+     // Owl Carousel Previous Button
+     $('.custom-nav .owl-prev').click(function () {
+         $("#testimonial-carousel").trigger('prev.owl.carousel'); // testimonial-carousel id'siyle çağırıyoruz
+     });
+ 
+     // Owl Carousel Next Button
+     $('.custom-nav .owl-next').click(function () {
+         $("#testimonial-carousel").trigger('next.owl.carousel'); // testimonial-carousel id'siyle çağırıyoruz
+     });
+ });
 
 //Courses button color change
 document.addEventListener('DOMContentLoaded', function () {

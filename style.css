@@ -231,7 +231,6 @@ small {
   background: #ccadad;
 }
 .owl-prev i ,.owl-next i{
-
   font-size: 12px;
 }
 /*owl courses*/
@@ -256,10 +255,6 @@ small {
   color: #29ca8e !important;
 }
 
-#courses  .card{
-  width: 25rem;
-}
-
 #courses .card-footer{
   border-top: 1px solid #f0f0f0 !important;
 }
@@ -281,12 +276,34 @@ small {
   line-height: 26px;
 }
 
-#testimonial .card{
-  width: 25rem;
-}
 .author-rating .fa {
   color: #3f51b5;
 }
+
+/*owl courses*/
+#testimonial .custom-nav button {
+  color: #333;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%; /* Yuvarlak şekil için */
+  height: 12px; /* Düğmenin yüksekliği */
+
+}
+
+#testimonial .custom-nav .owl-prev,
+#testimonial .custom-nav .owl-next {
+  background: #ccc; /* Gri arkaplan */
+}
+
+ #testimonial .custom-nav .owl-prev:hover,
+ #testimonial .custom-nav .owl-next:hover {
+  background: #999; /* Gri hover arkaplanı */
+}
+
+/**/
+
 /* Contact */
 
 .contact-button {
