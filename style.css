@@ -1,0 +1,321 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+}
+.navbar {
+  padding: 0;
+}
+
+p {
+  color: #757575;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #454545 !important;
+}
+
+h2 {
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+
+h3 a {
+  color: #454545 !important;
+}
+
+h4{
+  font-size: 18px;
+}
+
+/*Sections general*/
+#team,
+#testimonial {
+  background: #f9f9f9;
+}
+
+#courses .card , #courses .card-footer{
+  background-color: #f9f9f9;
+}
+
+/* ======================================= Menu & Slider =======================================*/
+.navbar-brand {
+  color: #454545;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.link-active {
+  background: #29ca8e;
+  color: #fff;
+}
+.nav-link:hover {
+  background: #29ca8e;
+  color: #fff;
+}
+
+.btn-outline-light {
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: normal;
+  padding: 15px 30px;
+  transition: 0.5s;
+}
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption p {
+  color: #f9f9f9;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  padding: 5px 0 40px 0;
+}
+
+.carousel-caption h3 {
+  font-size: 3rem;
+}
+span{
+  color: #757575;
+  font-size: 14px;
+}
+
+/* ======================================= Features =======================================*/
+.numbers {
+  background: #3f51b5;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+/*======================================= About =======================================*/
+
+.about-icon {
+  background: #29ca8e;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.circle {
+  background: rgb(37, 32, 32);
+  border-radius: 100%;
+  text-align: center;
+  padding: 6em;
+  width: 450px;
+  height: 450px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgb(85, 85, 85);
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.about-right .form-control {
+  background: transparent;
+  border-width: 0px 0px 1px;
+  border-top-style: initial;
+  border-right-style: initial;
+  border-left-style: initial;
+  border-color: initial;
+  border-image: initial;
+  border-bottom-style: solid;
+  border-radius: 0px;
+  box-shadow: none;
+  height: 45px;
+  margin: 10px 0px;
+}
+
+.about-right .submit-btn {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  border: 0px;
+  color: rgb(37, 32, 32);
+  width: 50%;
+  height: 50px;
+  margin: 30px auto 10px;
+}
+
+.about-right .submit-btn:hover {
+  background: rgb(63, 81, 181);
+  color: rgb(255, 255, 255);
+}
+
+.form-control::placeholder {
+  color: gray;
+}
+/*======================================= Teachers =======================================*/
+
+#contact-form {
+  background: #3f51b5;
+}
+.social-icon {
+  font-size: 16px;
+}
+
+small {
+  font-weight: 300;
+  line-height: 1;
+  color: #777;
+  font-size: 65%;
+}
+/*======================================= Popular Courses =======================================*/
+
+/*owl courses*/
+.custom-nav {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+.custom-nav button {
+  font-size: 24px;
+  color: #333;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+.custom-nav .owl-prev {
+  left: 0;
+}
+.custom-nav .owl-next {
+  right: 0;
+}
+.custom-nav .owl-prev:hover,
+.custom-nav .owl-next:hover {
+  color: #555;
+}
+.owl-dots {
+  display: none;
+}
+.owl-prev,.owl-next{
+  background: #ccadad;
+}
+.owl-prev i ,.owl-next i{
+
+  font-size: 12px;
+}
+/*owl courses*/
+.profile-image{
+  width: 50px;
+  height: 50px;
+}
+.profile-image img {
+  border-radius: 50%;
+ 
+}
+.btn-price,.btn-price:hover{
+  background: #29ca8e;
+  border-radius: 2px;
+  color: #ffffff;
+  display: block;
+  padding: 5px 10px;
+  width: 80px;
+  font-size: 14px;
+}
+#courses .card-title:hover{
+  color: #29ca8e !important;
+}
+
+#courses  .card{
+  width: 25rem;
+}
+
+#courses .card-footer{
+  border-top: 1px solid #f0f0f0 !important;
+}
+
+.courses-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0); /* Siyah arka plan */
+  opacity: 0.3; /* Opaklık seviyesi */
+}
+/*======================================= Student Reviews =======================================*/
+
+#testimonial .card .card-text{
+  font-size: 16px;
+  line-height: 26px;
+}
+
+#testimonial .card{
+  width: 25rem;
+}
+.author-rating .fa {
+  color: #3f51b5;
+}
+/* Contact */
+
+.contact-button {
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  color: #555;
+  font-size: 14px;
+  height: 50px;
+  width: 100%;
+}
+
+.contact-button:hover {
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  .carousel-inner {
+    height: 650px;
+  }
+  .contact-button {
+    width: 170px;
+  }
+
+  .custom-caption {
+    top: 45%;
+  }
+
+}
+

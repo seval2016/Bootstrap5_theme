@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Group Çalışması</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!--Bootstrap - icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--owl carousel-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/O.card wlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="home">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="border-top: 4px solid #29ca8e">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand me-0 me-lg-5" href="#">Known</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center text-lg-start ms-0 ms-lg-5" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll navbar-nav-first">
+                        <li class="nav-item">
+                            <a class="nav-link link-active py-2 py-lg-4 px-lg-3" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-2 py-lg-4 px-lg-3" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-2 py-lg-4 px-lg-3" aria-current="page" href="#">Our Teachers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-2 py-lg-4 px-lg-3" aria-current="page" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-2 py-lg-4 px-lg-3" aria-current="page" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-2 py-lg-4 px-lg-3" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav d-flex align-items-center align-items-lg-start justify-content-lg-end">
+                        <li class="nav-item">
+                            <a class="nav-link py-2 py-lg-4" aria-current="page" href="#">
+                                <i class="bi bi-telephone-fill phone-icon"></i>
+                                <span>+65 2244 1100</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <div class="row">
+            <div id="carouselExample" class="carousel slide mb-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <img src="./img/slider-image1.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block text-center text-md-start custom-caption">
+                            <h1 class="fw-bold">Distance Learning <br> Education Center</h1>
+                            <p>Our online courses are designed to fit in your industry supporting all-round <br> with
+                                latest
+                                technologies.</p>
+                            <a href="#courses" class="btn btn-outline-light smoothScroll">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="./img/slider-image2.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block text-center text-md-start custom-caption">
+                            <h1 class="fw-bold">Start your journey with our <br> practical courses</h1>
+                            <p>Our online courses are built in partnership with technology leaders and are <br> designed
+                                to meet
+                                industry demands.</p>
+                            <a href="#courses" class="btn btn-outline-light smoothScroll">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="./img/slider-image3.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block text-center text-md-start custom-caption">
+                            <h1 class="fw-bold">Efficient Learning Methods</h1>
+                            <p>Nam eget sapien vel nibh euismod vulputate in vel nibh. Quisque eu ex eu <br> urna
+                                venenatis
+                                sollicitudin ut at libero. Visit </p>
+                            <a href="#courses" class="btn btn-outline-light smoothScroll">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feature">
+        <div class="container">
+            <div class="row d-flex gap-5 justify-content-center align-items-center my-5">
+
+                <div class="card p-5" style="width: 21rem;height: 20rem;border: 1px solid rgb(240, 240, 240);">
+                    <div class="numbers ms-3">01</div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Trending Courses</h5>
+                        <p class="card-text"> Known is free education HTML Bootstrap Template. You can modify
+                            in any way and use this for your website.</p>
+                    </div>
+                </div>
+
+                <div class="card p-5" style="width: 21rem;height: 20rem; border: 1px solid rgb(240, 240, 240);">
+                    <div class="numbers ms-3">02</div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Books & Library</h5>
+                        <p class="card-text">You are allowed to use Known HTML Template for your commercial
+                            or non-commercial websites.</p>
+                    </div>
+                </div>
+
+                <div class="card p-5" style="width: 21rem;height: 20rem; border: 1px solid rgb(240, 240, 240);">
+                    <div class="numbers ms-3">03</div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Certified Teachers</h5>
+                        <p class="card-text"> Please spread a word about us. Template redistribution is NOT
+                            allowed on any download website.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-6 col-sm-12">
+                    <div class="about-left d-flex flex-column gap-4">
+                        <h2 class="fw-bold mt-5">Start your journey to a better life with online practical courses</h2>
+                        <div class="d-flex gap-3">
+                            <span class="about-icon"><i class="fa fa-users"></i></span>
+                            <div class="d-flex flex-column">
+                                <h3 class="fw-bold">Professional Trainers</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa voluptatibus.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <span class="about-icon"><i class="fa fa-certificate"></i></span>
+                            <div class="d-flex flex-column">
+                                <h3 class="fw-bold">International Certifications</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa voluptatibus.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <span class="about-icon"><i class="fa fa-bar-chart-o"></i></span>
+                            <div class="d-flex flex-column">
+                                <h3 class="fw-bold">Free for 3 months</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa voluptatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="about-right mt-4">
+                        <div class="circle ms-lg-5">
+                            <form action="/action_page.php">
+                                <h2 class="text-white">Signup today</h2>
+                                <div class="">
+                                    <input type="text" class="form-control" id="name" placeholder="Full Name"
+                                        name="name">
+                                </div>
+                                <div class="">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email address"
+                                        name="email">
+                                </div>
+                                <div class="">
+                                    <input type="password" class="form-control" id="email" placeholder="Your Password"
+                                        name="password">
+                                </div>
+                                <button type="submit" class="btn btn-primary submit-btn">Get Started</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-5">
+        <div class="container">
+            <div class="section-title d-flex flex-column">
+                <h2 class="text-center mt-5 fw-bold">Teachers <br><small>Meet Professional Trainers</small></h2>
+            </div>
+
+            <div class="row my-5 d-flex">
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center mb-4">
+                    <div class="card p-0 border-0">
+                        <img src="img/author-image1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <h3 class="card-title m-4 mb-0">Mark Wilson</h3>
+                            <p class="card-text ms-4">I Love Teaching</p>
+
+                            <ul class="list-group d-flex flex-row gap-4 list-unstyled social-icon border-top p-4">
+                                <li class="list-item"><i class="fa fa-facebook-f"></i></li>
+                                <li class="list-item"><i class="fa fa-twitter"></i></li>
+                                <li class="list-item"><i class="fa fa-instagram"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center mb-4">
+                    <div class="card p-0 border-0">
+                        <img src="img/author-image2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <h3 class="card-title m-4 mb-0">Catherine</h3>
+                            <p class="card-text ms-4">Education is the key!</p>
+                            <ul class="list-group d-flex flex-row gap-4 list-unstyled social-icon border-top p-4">
+                                <li class="list-item"><i class="fa fa-google"></i></li>
+                                <li class="list-item"><i class="fa fa-instagram"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center mb-4">
+                    <div class="card p-0 border-0">
+                        <img src="img/author-image3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <h3 class="card-title m-4 mb-0">MJessie Ca </h3>
+                            <p class="card-text ms-4">I like Online Courses</p>
+                            <ul class="list-group d-flex flex-row gap-4 list-unstyled social-icon border-top p-4">
+                                <li class="list-item"> <i class="fa fa-facebook-f"></i> </li>
+                                <li class="list-item"><i class="fa fa-envelope"></i>
+                                </li>
+                                <li class="list-item"><i class="fa fa-linkedin"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center mb-4">
+                    <div class="card p-0 border-0">
+                        <img src="img/author-image4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0">
+                            <h3 class="card-title">Mark Wilson</h3>
+                            <p class="card-text">I Love Teaching</p>
+                            <ul class="list-group d-flex flex-row gap-4 list-unstyled social-icon border-top p-4">
+                                <li class="list-item"><i class="fa fa-twitter"></i></li>
+                                <li class="list-item"><i class="fa fa-google"></i></li>
+                                <li class="list-item"><i class="fa fa-behance"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="mt-5">
+        <div class="section-title d-flex flex-column mb-5">
+            <h2 class="text-center mt-5 fw-bold">Popular Courses<br><small>Upgrade your skills with newest
+                    courses</small></h2>
+        </div>
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card border-0">
+                        <div class="position-relative courses-image">
+                            <img src="img/courses-image1.jpg" class="card-img-top" alt="Course Image">
+                            <div class="position-absolute bottom-0 ms-3">
+                                <i class="calendar-icon bi bi-calendar-date text-white fw-bold"></i>
+                                <span class="me-2 fw-bold text-white">12/07/2024</span>
+                                <i class="bi bi-clock text-white fw-bold"></i>
+                                <span class="me-2 fw-bold text-white">7 Hours</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-bold">Social Media Management</h3>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center border-0 p-4">
+                            <div class="card-footer-left d-flex align-items-center">
+                                <div class="profile-image">
+                                    <img src="img/author-image1.jpg" class="img-responsive img-fluid rounded-circle"
+                                        alt="Profile Image">
+                                </div>
+                                <span class="fw-bold ms-3 text-black">Mark Wilson</span>
+                            </div>
+                            <div class="courses-price">
+                                <a class="btn btn-price" href="#" role="button">USD 45</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0">
+                        <div class="position-relative courses-image">
+                            <img src="img/courses-image2.jpg" class="card-img-top" alt="Course Image">
+                            <div class="position-absolute bottom-0 ms-3 ">
+                                <i class="calendar-icon bi bi-calendar-date text-white fw-bold"></i>
+                                <span class="me-2 fw-bold text-white">25/06/2024</span>
+                                <i class="bi bi-clock text-white fw-bold"></i>
+                                <span class="me-2 fw-bold text-white">5 Hours</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-bold">Business Management</h3>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center border-0 p-4">
+                            <div class="card-footer-left d-flex align-items-center">
+                                <div class="profile-image">
+                                    <img src="img/author-image2.jpg" class="img-responsive img-fluid rounded-circle"
+                                        alt="Profile Image">
+                                </div>
+                                <span class="fw-bold ms-3 text-black">Mark Wilson</span>
+                            </div>
+                            <div class="courses-price">
+                                <a class="btn btn-price" href="#" role="button">Free</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0">
+                        <div class="position-relative courses-image">
+                            <img src="img/courses-image3.jpg" class="card-img-top" alt="Course Image">
+                            <div class="position-absolute bottom-0 ms-3 ">
+                                <i class="calendar-icon bi bi-calendar-date text-white fw-bold"></i>
+                                <span class="me-2 fw-bold text-white">25/06/2024</span>
+                                <i class="bi bi-clock text-white fw-bold"></i>
+                                <span class="me-2 fw-bold text-white">5 Hours</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-bold">Marketing Communication</h3>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center border-0 p-4">
+                            <div class="card-footer-left d-flex align-items-center">
+                                <div class="profile-image">
+                                    <img src="img/author-image3.jpg" class="img-responsive img-fluid rounded-circle"
+                                        alt="Profile Image">
+                                </div>
+                                <span class="fw-bold ms-3 text-black">Mark Wilson</span>
+                            </div>
+                            <div class="courses-price">
+                                <a class="btn btn-price" href="#" role="button">USD 25</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0">
+                        <div class="position-relative courses-image">
+                            <img src="img/courses-image4.jpg" class="card-img-top" alt="Course Image">
+                            <div class="position-absolute bottom-0 ms-3 ">
+                                <i class="calendar-icon bi bi-calendar-date text-white fw-bold"></i>
+                                <span class="me-2 fw-bold text-white">25/06/2024</span>
+                                <i class="bi bi-clock text-white fw-bold"></i>
+                                <span class="me-2 fw-bold text-white">5 Hours</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-bold">Graphic & Web Design</h3>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center border-0 p-4">
+                            <div class="card-footer-left d-flex align-items-center">
+                                <div class="profile-image">
+                                    <img src="img/author-image4.jpg" class="img-responsive img-fluid rounded-circle"
+                                        alt="Profile Image">
+                                </div>
+                                <span class="fw-bold ms-3 text-black">Mark Wilson</span>
+                            </div>
+                            <div class="courses-price">
+                                <a class="btn btn-price" href="#" role="button">USD 80</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0">
+                        <div class="position-relative courses-image">
+                            <img src="img/courses-image3.jpg" class="card-img-top" alt="Course Image">
+                            <div class="position-absolute bottom-0 ms-3 ">
+                                <i class="calendar-icon bi bi-calendar-date text-white fw-bold"></i>
+                                <span class="me-2 fw-bold text-white">25/06/2024</span>
+                                <i class="bi bi-clock text-white fw-bold"></i>
+                                <span class="me-2 fw-bold text-white">5 Hours</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-bold">Marketing Communication</h3>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center border-0 p-4">
+                            <div class="card-footer-left d-flex align-items-center">
+                                <div class="profile-image">
+                                    <img src="img/author-image1.jpg" class="img-responsive img-fluid rounded-circle"
+                                        alt="Profile Image">
+                                </div>
+                                <span class="fw-bold ms-3 text-black">Mark Wilson</span>
+                            </div>
+                            <div class="courses-price">
+                                <a class="btn btn-price" href="#" role="button">Free</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-nav mb-5">
+                <button class="owl-prev"><i class="bi bi-chevron-left"></i></button>
+                <button class="owl-next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial" class="py-5">
+        <div class="section-title d-flex flex-column mb-5">
+            <h2 class="text-center mt-5 fw-bold">Student Reviews<br><small>from around the world</small></h2>
+        </div>
+        <div class="container">
+            <div class="owl-carousel owl-theme d-flex" id="testimonial-carousel">
+                <div class="item">
+                    <div class="card border-0 py-5 px-3">
+                        <div class="card-body">
+                            <div class="author d-flex">
+                                <div class="profile-image">
+                                    <img src="img/tst-image1.jpg" class="img-responsive img-fluid rounded-circle"
+                                        alt="Profile Image">
+                                </div>
+                                <div class="author-info ms-4">
+                                    <h4 class="text-black m-0">Barbie</h4>
+                                    <span>Shopify Developer</span>
+                                </div>
+                            </div>
+                            <p class="card-text my-3">You really do help young creative minds to get quality education and
+                                professional job search assistance. I’d recommend it to everyone!</p>
+                            <div class="author-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 py-5 px-3">
+                        <div class="card-body">
+                            <div class="author d-flex">
+                                <div class="profile-image">
+                                    <img src="img/tst-image2.jpg" class="img-responsive img-fluid rounded-circle"
+                                        alt="Profile Image">
+                                </div>
+                                <div class="author-info ms-4">
+                                    <h4 class="text-black m-0">Barbie</h4>
+                                    <span>Shopify Developer</span>
+                                </div>
+                            </div>
+                            <p class="card-text my-3">You really do help young creative minds to get quality education and
+                                professional job search assistance. I’d recommend it to everyone!</p>
+                            <div class="author-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 py-5 px-3">
+                        <div class="card-body">
+                            <div class="author d-flex">
+                                <div class="profile-image">
+                                    <img src="img/tst-image3.jpg" class="img-responsive img-fluid rounded-circle"
+                                        alt="Profile Image">
+                                </div>
+                                <div class="author-info ms-4">
+                                    <h4 class="text-black m-0">Barbie</h4>
+                                    <span>Shopify Developer</span>
+                                </div>
+                            </div>
+                            <p class="card-text my-3">You really do help young creative minds to get quality education and
+                                professional job search assistance. I’d recommend it to everyone!</p>
+                            <div class="author-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 py-5 px-3">
+                        <div class="card-body">
+                            <div class="author d-flex">
+                                <div class="profile-image">
+                                    <img src="img/tst-image4.jpg" class="img-responsive img-fluid rounded-circle"
+                                        alt="Profile Image">
+                                </div>
+                                <div class="author-info ms-4">
+                                    <h4 class="text-black m-0">Barbie</h4>
+                                    <span>Shopify Developer</span>
+                                </div>
+                            </div>
+                            <p class="card-text my-3">You really do help young creative minds to get quality education and
+                                professional job search assistance. I’d recommend it to everyone!</p>
+                            <div class="author-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-nav pb-5">
+                <button class="owl-prev"><i class="bi bi-chevron-left"></i></button>
+                <button class="owl-next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <div class="container">
+            <div class="row py-5 d-flex justify-content-center align-items-center">
+                <div class="col-md-6 col-sm-12">
+                    <h2 class="fw-bold text-white">Contact us <br><small class="text-white">we love conversations. let
+                            us
+                            talk!</small></h2>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control py-4" id="exampleInputEmail1"
+                                placeholder="Enter Full Name" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control py-4" id="exampleInputPassword1"
+                                placeholder="Enter email address">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control h-100" rows="7" placeholder="Tell us about your message"
+                                id="floatingTextarea"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary contact-button">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="section-title d-flex flex-column py-5">
+                        <img src="img/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="style.js"></script>
+</body>
+
+</html>
