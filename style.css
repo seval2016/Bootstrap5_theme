@@ -1,27 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+:root {
+  --border: 1px solid #f0f0f0;
+  --btn-border: 1px solid rgb(255, 255, 255);
+  --border-radius:50px;
+  --btn-width:150px;
+  --tittle-color:#454545;
+  --font-size: 14px;
+  --background-color:#f9f9f9;
+  --color:#757575;
+  --green: #29ca8e;
+}
 
 body {
   font-family: "Mulish", sans-serif;
-  font-size: 14px;
 }
 .navbar {
   padding: 0;
 }
 
 p {
-  color: #757575;
-  font-size: 14px;
   font-weight: normal;
   line-height: 24px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+p,span,a,input,.btn{
+  font-size: var(--font-size) !important;
+  color: var(--color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Mulish", sans-serif;
   font-weight: 600;
   line-height: inherit;
-  color: #454545 !important;
+  color: var(--tittle-color) !important;
 }
 
 h2 {
@@ -34,43 +51,39 @@ h3 {
 }
 
 h3 a {
-  color: #454545 !important;
+  color: var(--tittle-color) !important;
 }
 
-h4{
+h4 {
   font-size: 18px;
 }
 
 /*Sections general*/
-#team,
-#testimonial {
-  background: #f9f9f9;
-}
-
-#courses .card , #courses .card-footer{
-  background-color: #f9f9f9;
+#team, #testimonial, #courses .card,
+#courses .card-footer {
+  background: var(--background-color);
 }
 
 /* ======================================= Menu & Slider =======================================*/
 .navbar-brand {
-  color: #454545;
+  color: var(--tittle-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
 }
 .link-active {
-  background: #29ca8e;
+  background: var(--green);
   color: #fff;
 }
 .nav-link:hover {
-  background: #29ca8e;
+  background:  var(--green);
   color: #fff;
 }
 
 .btn-outline-light {
   background: transparent;
-  border-radius: 50px;
-  border: 1px solid #ffffff;
+  border-radius: var(--border-radius);
+  border: var(--btn-border);
   color: #ffffff;
   font-size: inherit;
   font-weight: normal;
@@ -83,7 +96,7 @@ h4{
   transform: translateY(-50%);
 }
 .carousel-caption p {
-  color: #f9f9f9;
+  color: var(--background-color);
   font-size: 16px;
   font-weight: 300;
   margin: 0;
@@ -93,15 +106,15 @@ h4{
 .carousel-caption h3 {
   font-size: 3rem;
 }
-span{
-  color: #757575;
-  font-size: 14px;
-}
 
 /* ======================================= Features =======================================*/
+#feature .card{
+  border: var(--border);
+}
+
 .numbers {
   background: #3f51b5;
-  border-radius: 50px;
+  border-radius:var(--border-radius);
   color: #ffffff;
   font-size: 25px;
   font-weight: bold;
@@ -112,17 +125,20 @@ span{
   text-align: center;
   margin-bottom: 5px;
 }
+
 /*======================================= About =======================================*/
 
 .about-icon {
-  background: #29ca8e;
-  border-radius: 50px;
+  background:  var(--green);
+  border-radius:var(--border-radius);
   color: #ffffff;
-  font-size: 25px;
   width: 50px;
   height: 50px;
   line-height: 50px;
   text-align: center;
+}
+.about-icon i{
+font-size: 25px;
 }
 
 .circle {
@@ -139,43 +155,46 @@ span{
   width: 100%;
   height: 34px;
   padding: 6px 12px;
-  font-size: 14px;
   line-height: 1.42857;
   color: rgb(85, 85, 85);
   background-color: rgb(255, 255, 255);
   background-image: none;
-  border: 1px solid rgb(204, 204, 204);
+  border: var(--btn-border);
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 
-.about-right .form-control {
-  background: transparent;
-  border-width: 0px 0px 1px;
-  border-top-style: initial;
-  border-right-style: initial;
-  border-left-style: initial;
-  border-color: initial;
-  border-image: initial;
-  border-bottom-style: solid;
-  border-radius: 0px;
-  box-shadow: none;
-  height: 45px;
-  margin: 10px 0px;
+#about .form-control:focus,
+footer .form-control:focus {
+  color: #555;
+  background-color: transparent;
+  border-color: #303030;
+  outline: 0;
+  box-shadow: transparent !important;
 }
 
-.about-right .submit-btn {
+.about-right .form-control,
+footer .form-control {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  box-shadow: none;
+  height: 45px;
+  margin: 10px 0;
+}
+
+.submit-btn {
   background: rgb(255, 255, 255);
-  border-radius: 50px;
-  border: 0px;
+  border-radius: var(--border-radius);
   color: rgb(37, 32, 32);
   width: 50%;
   height: 50px;
   margin: 30px auto 10px;
 }
 
-.about-right .submit-btn:hover {
+.submit-btn:hover {
   background: rgb(63, 81, 181);
   color: rgb(255, 255, 255);
 }
@@ -227,36 +246,47 @@ small {
 .owl-dots {
   display: none;
 }
-.owl-prev,.owl-next{
+.owl-prev,
+.owl-next {
   background: #ccadad;
 }
-.owl-prev i ,.owl-next i{
+.owl-prev i,
+.owl-next i {
   font-size: 12px;
+  background: #D6D6D6;
+  padding: 9px;
+  color: #fff;
 }
+
+.owl-prev i:hover,
+.owl-next i:hover {
+  background: #869791;
+  color: #FFF;
+}
+
 /*owl courses*/
-.profile-image{
+.profile-image {
   width: 50px;
   height: 50px;
 }
 .profile-image img {
   border-radius: 50%;
- 
 }
-.btn-price,.btn-price:hover{
-  background: #29ca8e;
+.btn-price,
+.btn-price:hover {
+  background:  var(--green);
   border-radius: 2px;
-  color: #ffffff;
+  color: #fff;
   display: block;
   padding: 5px 10px;
   width: 80px;
-  font-size: 14px;
 }
-#courses .card-title:hover{
-  color: #29ca8e !important;
+#courses .card-title:hover {
+  color:  var(--green) !important;
 }
 
-#courses .card-footer{
-  border-top: 1px solid #f0f0f0 !important;
+#courses .card-footer {
+  border-top: var(--border) !important;
 }
 
 .courses-image::before {
@@ -271,7 +301,7 @@ small {
 }
 /*======================================= Student Reviews =======================================*/
 
-#testimonial .card .card-text{
+#testimonial .card .card-text {
   font-size: 16px;
   line-height: 26px;
 }
@@ -289,21 +319,17 @@ small {
   z-index: 10;
   border-radius: 50%; /* Yuvarlak şekil için */
   height: 12px; /* Düğmenin yüksekliği */
-
 }
 
 #testimonial .custom-nav .owl-prev,
 #testimonial .custom-nav .owl-next {
-  background: #ccc; /* Gri arkaplan */
+  background: #d6d6d6; /* Gri arkaplan */
 }
 
- #testimonial .custom-nav .owl-prev:hover,
- #testimonial .custom-nav .owl-next:hover {
-  background: #999; /* Gri hover arkaplanı */
+#testimonial .custom-nav .owl-prev:hover,
+#testimonial .custom-nav .owl-next:hover {
+  background: #869791; /* Gri hover arkaplanı */
 }
-
-/**/
-
 /* Contact */
 
 .contact-button {
@@ -311,7 +337,6 @@ small {
   border: 1px solid transparent;
   background-color: #fff;
   color: #555;
-  font-size: 14px;
   height: 50px;
   width: 100%;
 }
@@ -320,6 +345,38 @@ small {
   border-radius: 50px;
   border: 1px solid #fff;
   background-color: transparent;
+  color: #fff;
+}
+
+/*======================================= Footer =======================================*/
+footer {
+  background: #252020;
+  padding: 120px 0;
+}
+
+footer .social-icon li a {
+  color:  var(--green);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer_menu ul li a {
+  text-decoration: none;
+}
+
+.footer_menu ul li a:hover {
+  color: var(--green);
+}
+
+footer .submit-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 40%;
+}
+.submit-btn:hover {
+  background: var(--green);
+  color: rgb(255, 255, 255);
 }
 
 @media (min-width: 992px) {
@@ -333,6 +390,4 @@ small {
   .custom-caption {
     top: 45%;
   }
-
 }
-
